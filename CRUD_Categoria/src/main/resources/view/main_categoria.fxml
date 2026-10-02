@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<VBox spacing="16" minWidth="950" minHeight="520" styleClass="contenido" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pe.edu.upeu.sysventas.controller.CategoriaController">
+ <HBox spacing="12" alignment="CENTER_LEFT" styleClass="barra-busqueda">
+  <Label text="CRUD de Categoría" styleClass="seccion"/><Region HBox.hgrow="ALWAYS"/>
+  <Label text="Buscar"/><TextField fx:id="txtBuscar" promptText="Código o nombre" prefWidth="230"/><Button text="Buscar" onAction="#listar" styleClass="btn-buscar"/>
+ </HBox>
+ <HBox spacing="18" VBox.vgrow="ALWAYS">
+  <VBox spacing="14" minWidth="300" prefWidth="300" styleClass="panel-formulario">
+   <Label text="Formulario de categoría" styleClass="seccion"/>
+   <Label text="Nombre"/><TextField fx:id="txtNombre" promptText="Nombre del registro"/>
+   <Button text="Guardar" onAction="#guardar" styleClass="btn-guardar" maxWidth="Infinity"/>
+   <Button text="Nuevo / Limpiar" onAction="#nuevo" styleClass="btn-nuevo" maxWidth="Infinity"/>
+   <Label fx:id="lblEstado" wrapText="true" maxWidth="270" styleClass="mensaje"/>
+   <Label text="Para editar, selecciona una fila. No se pueden eliminar registros utilizados por zapatillas." wrapText="true" maxWidth="270"/>
+  </VBox>
+  <VBox spacing="12" HBox.hgrow="ALWAYS">
+   <TableView fx:id="tabla" VBox.vgrow="ALWAYS"/>
+   <HBox spacing="10"><Button text="Editar seleccionado" onAction="#editarSeleccionado"/><Button text="Eliminar seleccionado" onAction="#eliminarSeleccionado"/></HBox>
+  </VBox>
+ </HBox>
+</VBox>

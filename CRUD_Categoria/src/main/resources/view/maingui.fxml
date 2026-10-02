@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<BorderPane styleClass="tienda-fondo" prefWidth="1180" prefHeight="700" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pe.edu.upeu.sysventas.controller.MainguiController">
+ <top><VBox><MenuBar><menus>
+  <Menu text="Archivo"><items><MenuItem text="Actualizar tabla" onAction="#actualizar"/><MenuItem text="Salir" onAction="#salir"/></items></Menu>
+  <Menu text="Editar"><items><MenuItem text="Nuevo / Limpiar" onAction="#nuevo"/></items></Menu>
+  <Menu text="Ayuda"><items><MenuItem text="Cómo usar este CRUD" onAction="#ayuda"/></items></Menu>
+ </menus></MenuBar><VBox styleClass="banner" spacing="8"><Label text="CRUD CATEGORÍA" styleClass="titulo"/><Label text="Crear · Consultar · Actualizar · Eliminar" styleClass="subtitulo"/></VBox></VBox></top>
+ <center><TabPane fx:id="tabPane" tabClosingPolicy="UNAVAILABLE"/></center>
+ <bottom><Label text="Proyecto independiente de categoría  |  Los cambios se guardan durante la sesión" styleClass="pie"/></bottom>
+</BorderPane>

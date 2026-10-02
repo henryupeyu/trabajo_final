@@ -1,0 +1,193 @@
+/* =========================
+   BOTON BASE (btn)
+   ========================= */
+
+.btn {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-padding: 8 16 8 16;
+    -fx-border-radius: 4;
+    -fx-background-radius: 4;
+    -fx-cursor: hand;
+}
+
+/* =========================
+   PRIMARY
+   ========================= */
+
+.btn-primary {
+    -fx-background-color: #0d6efd;
+    -fx-text-fill: white;
+}
+
+.btn-primary:hover {
+    -fx-background-color: #0b5ed7;
+}
+
+.btn-primary:pressed {
+    -fx-background-color: #0a58ca;
+}
+
+/* =========================
+   SUCCESS
+   ========================= */
+
+.btn-success {
+    -fx-background-color: #198754;
+    -fx-text-fill: white;
+}
+
+.btn-success:hover {
+    -fx-background-color: #157347;
+}
+
+.btn-success:pressed {
+    -fx-background-color: #146c43;
+}
+
+/* =========================
+   DANGER
+   ========================= */
+
+.btn-danger {
+    -fx-background-color: #dc3545;
+    -fx-text-fill: white;
+}
+
+.btn-danger:hover {
+    -fx-background-color: #bb2d3b;
+}
+
+.btn-danger:pressed {
+    -fx-background-color: #b02a37;
+}
+
+/* =========================
+   WARNING
+   ========================= */
+
+.btn-warning {
+    -fx-background-color: #ffc107;
+    -fx-text-fill: black;
+}
+
+.btn-warning:hover {
+    -fx-background-color: #ffca2c;
+}
+
+.btn-warning:pressed {
+    -fx-background-color: #ffcd39;
+}
+
+.root {
+    -fx-font-family: "Segoe UI", Arial, sans-serif;
+    -fx-background-color: #a6ccf3;
+}
+
+#welcomeText {
+    -fx-text-fill: #91f458;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}
+
+
+
+/* Personalización de la plantilla para la tienda de zapatillas. */
+.root { -fx-font-family: "Segoe UI"; -fx-font-size: 13px; -fx-background-color: #f4f7fb; }
+.titulo { -fx-font-size: 23px; -fx-font-weight: bold; -fx-text-fill: #175585; -fx-padding: 18; }
+.seccion { -fx-font-size: 16px; -fx-font-weight: bold; -fx-text-fill: #175585; }
+.contenido { -fx-padding: 18; }
+.pie { -fx-padding: 12; -fx-text-fill: #465873; }
+.table-row-cell { -fx-cell-size: 35; }
+.button { -fx-cursor: hand; }
+
+/* Fondo y menús de la tienda. La imagen se incluye dentro del proyecto. */
+.tienda-fondo {
+    -fx-background-image: url("../img/fondo_zapatillas.png");
+    -fx-background-size: cover;
+    -fx-background-position: center center;
+    -fx-background-repeat: no-repeat;
+}
+.banner {
+    -fx-padding: 18 26;
+    -fx-min-height: 150;
+    -fx-background-color: rgba(7, 19, 43, 0.80);
+    -fx-background-image: url("../img/fondo_zapatillas.png");
+    -fx-background-size: contain;
+    -fx-background-position: right center;
+    -fx-background-repeat: no-repeat;
+}
+.titulo { -fx-text-fill: white; -fx-font-size: 27px; -fx-font-weight: bold; -fx-padding: 0; }
+.subtitulo { -fx-text-fill: #d6e5ff; -fx-font-size: 15px; }
+.insignia { -fx-text-fill: #9bf4eb; -fx-font-weight: bold; }
+.menu-bar { -fx-background-color: #101c34; -fx-padding: 7 12; }
+.menu-bar > .container > .menu-button { -fx-background-radius: 6; -fx-padding: 7 17; }
+.menu-bar > .container > .menu-button > .label { -fx-text-fill: white; -fx-font-weight: bold; }
+.menu-archivo { -fx-background-color: #245bc2; }
+.menu-marcas { -fx-background-color: #7443b9; }
+.menu-editar { -fx-background-color: #087a75; }
+.menu-ayuda { -fx-background-color: #ae481a; }
+.menu-bar > .container > .menu-button:hover,
+.menu-bar > .container > .menu-button:showing { -fx-background-color: #425b86; }
+.context-menu { -fx-background-color: #f7f9ff; -fx-background-radius: 6; -fx-padding: 6; }
+.menu-item { -fx-padding: 9 18; }
+.menu-item .label { -fx-text-fill: #182d4d; }
+.marca-nike .label { -fx-text-fill: #a84011; }
+.marca-adidas .label { -fx-text-fill: #174da5; }
+.marca-jordan .label { -fx-text-fill: #ad244b; }
+.marca-puma .label { -fx-text-fill: #087457; }
+.marca-newatletic .label { -fx-text-fill: #6c32a6; }
+.menu-item:focused { -fx-background-color: #245bc2; }
+.menu-item:focused .label { -fx-text-fill: white; }
+.tab-pane, .tab-content-area, .fondo-transparente, .fondo-transparente > .viewport { -fx-background-color: transparent; }
+.tab-pane .tab-header-area .tab-header-background { -fx-background-color: rgba(12, 28, 54, 0.9); }
+.tab { -fx-background-color: #7443b9; -fx-padding: 8 15; }
+.tab .tab-label { -fx-text-fill: white; -fx-font-weight: bold; }
+.contenido { -fx-padding: 18; -fx-background-color: transparent; }
+.barra-busqueda, .panel-formulario { -fx-background-color: rgba(250, 252, 255, 0.96); -fx-background-radius: 10; -fx-padding: 14; }
+.seccion { -fx-text-fill: #19365b; -fx-font-size: 16px; }
+.text-field, .combo-box { -fx-pref-height: 31; }
+.button { -fx-background-radius: 6; -fx-padding: 8 12; -fx-cursor: hand; }
+.btn-guardar { -fx-background-color: #087a60; -fx-text-fill: white; -fx-font-weight: bold; }
+.btn-nuevo { -fx-background-color: #ae481a; -fx-text-fill: white; -fx-font-weight: bold; }
+.btn-buscar { -fx-background-color: #245bc2; -fx-text-fill: white; -fx-font-weight: bold; }
+.btn-guardar:hover { -fx-background-color: #065d49; }
+.btn-nuevo:hover { -fx-background-color: #863613; }
+.btn-buscar:hover { -fx-background-color: #194497; }
+.table-view { -fx-background-color: #fafcff; -fx-background-radius: 10; -fx-padding: 5; }
+.table-view .column-header, .table-view .filler { -fx-background-color: #dfebfb; -fx-size: 38; }
+.table-view .column-header .label { -fx-text-fill: #19365b; }
+.table-row-cell:odd { -fx-background-color: #edf3fc; }
+.table-row-cell:selected { -fx-background-color: #245bc2; }
+.table-row-cell:selected .text { -fx-fill: white; }
+.mensaje { -fx-text-fill: #19365b; -fx-font-size: 12px; }
+.pie { -fx-background-color: rgba(7, 19, 43, 0.94); -fx-text-fill: #e1ebfa; -fx-padding: 12; }
+
+/* Tema en blanco y negro solicitado para esta versión. */
+.root { -fx-accent: black; -fx-focus-color: black; -fx-faint-focus-color: transparent; }
+.tienda-fondo { -fx-background-image: none; -fx-background-color: white; }
+.banner { -fx-background-image: none; -fx-background-color: black; }
+.titulo, .subtitulo, .insignia { -fx-text-fill: white; }
+.menu-bar, .menu-bar > .container > .menu-button { -fx-background-color: black; }
+.menu-bar > .container > .menu-button > .label { -fx-text-fill: white; }
+.menu-bar > .container > .menu-button:hover,
+.menu-bar > .container > .menu-button:showing { -fx-background-color: #333333; }
+.context-menu { -fx-background-color: white; }
+.menu-item .label { -fx-text-fill: black; }
+.menu-item:focused { -fx-background-color: black; }
+.menu-item:focused .label { -fx-text-fill: white; }
+.barra-busqueda, .panel-formulario { -fx-background-color: white; -fx-border-color: #dddddd; -fx-border-radius: 10; }
+.seccion, .mensaje { -fx-text-fill: black; }
+.button { -fx-background-color: black; -fx-text-fill: white; }
+.button:hover { -fx-background-color: #333333; }
+.tab-pane .tab-header-area .tab-header-background, .tab { -fx-background-color: black; }
+.tab:selected { -fx-background-color: #444444; }
+.tab .tab-label { -fx-text-fill: white; }
+.table-view { -fx-background-color: white; -fx-border-color: #cccccc; }
+.table-view .column-header, .table-view .filler { -fx-background-color: black; }
+.table-view .column-header .label { -fx-text-fill: white; }
+.table-row-cell { -fx-background-color: white; }
+.table-row-cell:odd { -fx-background-color: #eeeeee; }
+.table-row-cell:selected { -fx-background-color: black; }
+.table-row-cell:selected .text { -fx-fill: white; }
+.pie { -fx-background-color: black; -fx-text-fill: white; }
